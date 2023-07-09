@@ -14,8 +14,9 @@ concurrency:
   
 # Sets global environtment variables
 env:
+  CFG: ./.github/_config.yml
   OWNER: ${{ github.repository_owner }}
-  TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
 
 jobs:
   # Build job
